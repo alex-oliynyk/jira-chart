@@ -1,0 +1,4 @@
+selector     : jira-app
+replicas     : 1
+image        : atlassian/jira-software:8.19.0-jdk11
+containerPort: 8080
