@@ -1,6 +1,49 @@
-apiVersion : v2
-name       : Jira-Chart
-description: Helm chart for Jira
-type       : application
-version    : 1.0.0
-appVersion : "1.0.0"
+apiVersion: v2
+name: jira
+description: A chart for installing Jira Data Center on Kubernetes
+type: application
+version: 1.0.0
+appVersion: 8.19.0-jdk11
+kubeVersion: ">=1.19.x-0"
+keywords:
+  - Jira
+  - Jira Software
+  - Jira Server
+  - Jira Data Center
+  - Jira DC
+  - Atlassian
+home: https://atlassian.github.io/data-center-helm-charts/
+icon: https://atlassian.github.io/data-center-helm-charts/icons/jira-software.svg
+sources:
+  - https://github.com/atlassian/data-center-helm-charts
+  - https://bitbucket.org/atlassian-docker/docker-atlassian-jira/
+deprecated: false
+annotations:
+  artifacthub.io/containsSecurityUpdates: "true"
+  artifacthub.io/changes: |
+    - kind: changed
+      description: Improvements to graceful shutdown
+      links:
+      - name: Github PR
+        url: https://github.com/atlassian/data-center-helm-charts/pull/282
+    - kind: changed
+      description: Update Jira to 8.19.0
+      links:
+      - name: Github PR
+        url: https://github.com/atlassian/data-center-helm-charts/pull/286
+    - kind: changed
+      description: Improve documentation
+      links:
+      - name: Github PR
+        url: https://github.com/atlassian/data-center-helm-charts/pull/275
+        url: https://github.com/atlassian/data-center-helm-charts/pull/276
+        url: https://github.com/atlassian/data-center-helm-charts/pull/277
+        url: https://github.com/atlassian/data-center-helm-charts/pull/279
+        url: https://github.com/atlassian/data-center-helm-charts/pull/280
+        url: https://github.com/atlassian/data-center-helm-charts/pull/284
+        url: https://github.com/atlassian/data-center-helm-charts/pull/285
+        url: https://github.com/atlassian/data-center-helm-charts/pull/289
+        url: https://github.com/atlassian/data-center-helm-charts/pull/290
+        url: https://github.com/atlassian/data-center-helm-charts/pull/291
+        url: https://github.com/atlassian/data-center-helm-charts/pull/293
+        url: https://github.com/atlassian/data-center-helm-charts/pull/295
